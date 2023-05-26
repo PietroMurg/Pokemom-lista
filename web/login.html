@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        
+        *{ 
+            box-sizing: border-box 
+        }
+
+        body{
+            width: 100%;
+            height: 100%;
+            background-image: url("./src/imagens/stv.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%
+            
+            
+            
+        }
+        form{
+            width: 300px;
+            margin: 200px auto;
+            text-align:center;
+        }
+
+        input{
+            display: block;
+            margin: 20px auto;
+            width: 250px;
+            height: 30px;
+        }
+
+
+    </style>
+
+    
+</head>
+<body>
+
+    <form action="login_controller" method="post">
+            <h3>Login</h3>
+            <input type="text" placeholder="Login" id="login" name="user">
+            <input type="password" placeholder="Senha" id="senha" name="pass">
+            <input type="submit"> 
+            <!-- onclick="logar(); return false" /// se quiser utilizar ao lado do submit para puxar a função JS quando o botão é apertado-->
+    </form>
+
+    <script>
+
+        function logar(){
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+
+//            if(login == "adm" && senha == "1234"){
+//                alert('congratuleixon')
+//                location.href = "index.html"
+//            }else{
+//                alert("ERRO TROXAO")
+//            }
+        }
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
